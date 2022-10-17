@@ -1,0 +1,25 @@
+@layer components {
+  .header {
+
+    &__title {
+      display: flex;
+      font-size: var(--fs-header);
+      color: theme("colors.primary");
+      width: 100%;
+
+      span {
+        position: relative;
+        flex-grow: 1;
+        color: theme("colors.secondary");
+
+        &::before {
+          content: "";
+          position: absolute;
+          inset: 0;
+          background-color: theme("colors.primary");
+          z-index: -1;
+        }
+      }
+    }
+  }
+}

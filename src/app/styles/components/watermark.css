@@ -1,0 +1,26 @@
+@layer components {
+  .watermark {
+    width: var(--fs);
+
+    &-container {
+      --fs: calc(var(--fs-header) - 1rem);
+      position: relative;
+      display: flex;
+    }
+
+    &__text {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      line-height: 100%;
+      font-size: var(--fs);
+      color: theme("colors.primary");
+      writing-mode: vertical-lr;
+      transform: translateY(-50%) rotate(180deg);
+    }
+
+    &__sibling {
+      width: calc(100% - var(--fs));
+    }
+  }
+}

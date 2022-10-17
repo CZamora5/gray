@@ -1,0 +1,40 @@
+@layer base {
+  :root {
+    --clr-primary: 33 38 35;
+    --clr-secondary: 241 244 242;
+    --fs-header: 3rem;
+
+    @media screen and (min-width: theme("screens.xx")) {
+      --fs-header: 3.5rem;
+    }
+
+    @media screen and (min-width: theme("screens.xs")) {
+      --fs-header: 4rem;
+    }
+
+    @media screen and (min-width: theme("screens.sm")) {
+      --fs-header: 4.5rem;
+    }
+
+    @media screen and (min-width: theme("screens.md")) {
+      --fs-header: 5rem;
+    }
+
+    @media screen and (min-width: theme("screens.lg")) {
+      --fs-header: 5.5rem;
+    }
+
+    @media screen and (min-width: theme("screens.xl")) {
+      --fs-header: 6rem;
+    }
+
+    @media screen and (min-width: theme("screens.2xl")) {
+      --fs-header: 7rem;
+    }
+  }
+
+  body {
+    background-color: theme("colors.secondary");
+    color: theme("colors.primary");
+  }
+}
