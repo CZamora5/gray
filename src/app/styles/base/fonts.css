@@ -1,0 +1,33 @@
+@layer base {
+  @font-face {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    src: url("./app/assets/fonts/Poppins-Regular.ttf") format("truetype");
+  }
+
+  @font-face {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 700;
+    src: url("./app/assets/fonts/Poppins-Bold.ttf") format("truetype");
+  }
+
+  @font-face {
+    font-family: "Jacques Francois";
+    font-style: normal;
+    font-weight: 400;
+    src: url("./app/assets/fonts/JacquesFrancois-Regular.ttf") format("truetype");
+  }
+
+  html,
+  body {
+    font-family: "Poppins", sans-serif;
+  }
+
+  h1,
+  h2,
+  h3 {
+    font-family: "Jacques Francois", serif;
+  }
+}
