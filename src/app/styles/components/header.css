@@ -1,6 +1,5 @@
 @layer components {
   .header {
-
     &__title {
       display: flex;
       font-size: var(--fs-header);
