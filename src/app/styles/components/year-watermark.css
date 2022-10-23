@@ -1,0 +1,31 @@
+@layer components {
+  .year-watermark {
+    position: relative;
+
+    &::before, &::after {
+      display: none;
+      position: absolute;
+      bottom: 30%;
+      font-weight: 700;
+      font-size: 4.5rem;
+      pointer-events: none;
+
+      @media screen and (min-width: theme("screens.lg")) {
+        display: block;
+      }
+    }
+
+    &::before {
+      content: "1300-1";
+      right: -1rem;
+      opacity: 0.1;
+    }
+
+    &::after {
+      content: "750";
+      left: calc(100% + 1rem);
+      color: theme("colors.secondary");
+      opacity: 0.5;
+    }
+  }
+}
