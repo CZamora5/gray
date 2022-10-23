@@ -3,21 +3,26 @@
     --clr-primary: 33 38 35;
     --clr-secondary: 241 244 242;
     --fs-header: 3rem;
+    --fs-body: 0.75rem;
 
     @media screen and (min-width: theme("screens.xx")) {
       --fs-header: 3.5rem;
+      --fs-body: 0.8125rem;
     }
 
     @media screen and (min-width: theme("screens.xs")) {
       --fs-header: 4rem;
+      --fs-body: 0.875rem;
     }
 
     @media screen and (min-width: theme("screens.sm")) {
       --fs-header: 4.5rem;
+      --fs-body: 0.9375rem;
     }
 
     @media screen and (min-width: theme("screens.md")) {
       --fs-header: 5rem;
+      --fs-body: 1re<m;
     }
 
     @media screen and (min-width: theme("screens.lg")) {
@@ -36,5 +41,6 @@
   body {
     background-color: theme("colors.secondary");
     color: theme("colors.primary");
+    font-size: var(--fs-body);
   }
 }

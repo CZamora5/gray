@@ -14,9 +14,14 @@
       left: 0;
       line-height: 100%;
       font-size: var(--fs);
+      letter-spacing: 0.125rem;
       color: theme("colors.primary");
       writing-mode: vertical-lr;
       transform: translateY(-50%) rotate(180deg);
+
+      @media screen and (min-width: theme("screens.lg")) {
+        transform: translateY(calc(-50% + 2rem)) rotate(180deg);
+      }
     }
 
     &__sibling {

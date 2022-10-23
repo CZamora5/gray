@@ -10,15 +10,15 @@
 
 <body>
   <section class="xl:container">
-    <div class="xl:flex mb-12">
+    <div class="xl:flex">
       <div class="relative sm:flex xl:w-2/3 h-full">
         <div class="contents sm:block w-full sm:w-1/2">
-          <header class="py-4 pl-4 relative header">
+          <header class="py-2 pl-2 xs:py-4 xs:pl-4 relative header">
             <h1 class="header__title">
               Gr<span>ay</span>
             </h1>
           </header>
-          <div class="absolute bottom-12 xs:top-1/2 z-10 sm:static p-4 w-full flex flex-col items-center sm:block">
+          <div class="absolute bottom-12 xs:top-1/2 z-10 sm:static p-2 xs:p-4 w-full flex flex-col items-center sm:block">
             <p class="hidden xx:block text-xs xs:text-sm sm:text-base m
             d:text-lg text-center text-secondary sm:text-primary sm:text-left">
               The color gray is an emotionless, moody color that is typically associated with meanings of dull, dirty,
@@ -32,7 +32,7 @@
           </div>
         </div>
         <div class="w-full sm:w-1/2 relative">
-          <img src="./app/assets/images/img1.jpg" class="w-full2">
+          <img src="./app/assets/images/img1.jpg" class="w-full">
           <div
             class="none sm:block absolute left-0 bottom-0 transform -translate-x-full border-b border-solid border-primary pr-2">
             <span class="opacity-90">
@@ -44,12 +44,12 @@
           </div>
         </div>
       </div>
-      <div class="sm:flex sm:items-center sm:gap-4 mt-16 xl:mt-0 xl:flex-col xl:w-1/3 px-4">
+      <div class="sm:flex sm:items-center sm:gap-4 xx:mt-4 xs:mt-10 md:mt-16 xl:mt-0 xl:flex-col xl:w-1/3 px-2 xs:px-4">
         <div class="py-12 xl:py-0 xl:my-auto watermark-container w-full">
           <div class="watermark">
             <h2 class="opacity-40 watermark__text">Definition</h2>
           </div>
-          <p class="p-2 pr-0 watermark__sibling">
+          <p class="p-1 xs:p-2 pr-0 watermark__sibling">
             Gray is an intermediate color between black and white. It is a neutral or achromatic color, meaning
             literally that it is "without color", because it can be composed of black and white
           </p>
@@ -57,6 +57,32 @@
         <div class="w-full sm:order-1 xl:order-2">
           <img src="./app/assets/images/img2.jpg" class="w-full">
         </div>
+      </div>
+    </div>
+  </section>
+  <section class="xl:container">
+    <div class="mt-4 xs:mt-8 sm:mt-12 md:mt-20">
+      <header class="px-2 xs:px-4">
+        <h2 class="font-bold text-xl xs:text-2xl sm:text-3xl md:text-4xl lg:text-5xl">History</h2>
+      </header>
+      <div class="lg:flex mt-1 lg:mt-2">
+        <div class="px-2 xs:px-4 flex flex-col sm:flex-row lg:w-1/2">
+          <div class="xs:w-4/5 sm:w-full">
+            <h3 class="font-bold">Antiquity and the Middle Ages</h3>
+            <p>
+              Grey was the color of undyed wool, and thus was the color most commonly worn by peasants and the poor. It was also the color worn by Cistercian monks and friars of the Franciscan and Capuchin orders as a symbol of their vows of humility and poverty.
+            </p>
+          </div>
+          <div class="mt-4 sm:mt-0 sm:pl-4 xs:text-right xs:w-4/5 xs:self-end sm:w-full sm:text-left sm:self-start">
+            <h3 class="font-bold">Renaissance and the Baroque</h3>
+            <p>
+              Grey began to play an important role in fashion and art. Black became the most popular color of the nobility, particularly in Italy, France, and Spain, and grey and white were harmonious with it.
+            </p>
+          </div>
+        </div>
+        <figure class="w-full m-0 p-2 xs:p-4 lg:py-0 lg:pl-0 lg:w-1/2">
+          <img class="w-full" src="./app/assets/images/img3.jpg">
+        </figure>
       </div>
     </div>
   </section>
